@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DATABASE);
+mongoose.connect("mongodb://localhost:27017/sp-node-article", { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 mongoose.connection
     .on('connected', () => {
@@ -11,7 +11,7 @@ mongoose.connection
         console.log(`Connection error: ${err.message}`);
     });
 
-    require('./models/Registration');
+    require('./models/registration');
     const app = require('./app');
 
     const server = app.listen(3000, () => {

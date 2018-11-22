@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
     res.render('form', { title: 'Registration form' });
 });
 
+
 router.post('/',
     [
         body('name')
@@ -34,7 +35,8 @@ router.post('/',
                 data: req.body,
             });
             }
-        }
-    );
+    }
+);
+
 
 module.exports = router;
