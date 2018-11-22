@@ -6,7 +6,7 @@ Git clone (https://github.com/superkikx/first-app)
     npm i 
 
 # Using the APP server 
-    npm watch 
+    npm run watch 
     
 # Open your browser
     http://localhost:3000/
