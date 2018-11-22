@@ -5,15 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon ./start.js",
-    "start": "micro ./app.js"
+    "watch": "nodemon ./start.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
-    "micro": "^9.3.3"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"
